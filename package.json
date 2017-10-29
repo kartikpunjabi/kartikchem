@@ -4,8 +4,8 @@
   "description": "Providing quality chemicals since 1986",
   "main": "index.js",
   "scripts": {
-    "start":"npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
+    "start": "npm run build",
+    "build": "webpack -d && webpack-dev-server",
     "build:prod": "webpack -d && cp src/index.html dist/index.html"
   },
   "repository": {
@@ -19,10 +19,17 @@
   },
   "homepage": "https://github.com/kartikpunjabi/kartikchem#readme",
   "dependencies": {
+    "material-ui": "^1.0.0-alpha.21",
+    "material-ui-icons": "^1.0.0-alpha.19",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-bootstrap": "^0.31.2",
+    "react-dom": "^15.6.1",
+    "react-responsive-carousel": "^3.1.24",
+    "react-router-dom": "^4.1.2",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
